@@ -1,0 +1,24 @@
+# Build artifacts (installable ZIPs live in build/, never in git)
+build/*.zip
+*.zip
+
+# Dependency dirs (if tooling is added later)
+node_modules/
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# Logs / temp
+*.log
+*.tmp
