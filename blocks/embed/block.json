@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "chefsolver/embed",
+	"version": "1.0.0",
+	"title": "ChefSolver Embed",
+	"category": "widgets",
+	"icon": "chart-bar",
+	"description": "Embed a ChefSolver converter widget (generic or ingredient-specific) from the public manifest.",
+	"keywords": [ "chefsolver", "converter", "embed", "cooking" ],
+	"textdomain": "chefsolver-embeds",
+	"editorScript": "chefsolver-embeds-editor",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"attributes": {
+		"type": { "type": "string", "default": "converter" },
+		"slug": { "type": "string", "default": "" },
+		"lang": { "type": "string", "default": "" },
+		"theme": { "type": "string", "default": "" },
+		"accent": { "type": "string", "default": "" },
+		"compact": { "type": "boolean", "default": false },
+		"radius": { "type": "string", "default": "" },
+		"height": { "type": "number", "default": 0 }
+	}
+}
