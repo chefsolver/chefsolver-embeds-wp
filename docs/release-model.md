@@ -4,14 +4,14 @@ How this plugin is developed, QA'd and (eventually) distributed. This describes 
 
 ## 1. Development — GitHub (active)
 
-- All development happens in this repository (`robertmain53/chefsolver-embeds-wp`), default branch `main`.
+- All development happens in this repository (`chefsolver/chefsolver-embeds-wp`), default branch `main`.
 - Changes land via commits/PRs on GitHub. Issues and QA findings are tracked here.
 - The WordPress.org directory and SVN play **no role** during development.
 
 ## 2. QA — installable ZIP (next)
 
 - Each QA round is done against an installable ZIP built from `main` (folder `chefsolver-embeds/` at the ZIP root, only runtime files — no `docs/`, no `.git`).
-- ZIPs are produced into `build/` (gitignored) and attached to GitHub pre-releases for testers.
+- ZIPs are produced into `build/` (gitignored) by `bin/build-zip.sh` and attached to GitHub pre-releases for testers.
 - Gate: the manual checklist in `docs/qa.md` plus `php -l` on every PHP file.
 
 ## 3. WordPress.org submission (future, not scheduled)

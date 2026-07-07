@@ -8,7 +8,7 @@ WordPress plugin to embed [ChefSolver](https://chefsolver.com/) converter widget
 
 | Where | Role |
 |---|---|
-| **This GitHub repo** (`robertmain53/chefsolver-embeds-wp`) | The **development repository**: source of truth for code, issues, QA and releases. Installable ZIPs are built from here. |
+| **This GitHub repo** (`chefsolver/chefsolver-embeds-wp`) | The **official public development repository**: source of truth for code, issues, QA and releases. Installable ZIPs are built from here (see `bin/build-zip.sh`). |
 | **WordPress.org SVN** | **Not yet configured.** It will be a *release-only channel* if/after the plugin is reviewed and approved for the WordPress.org directory. No development happens there; only approved, tagged releases would be synced. |
 | **ChefSolver.com** | The **service being embedded**. It publishes the embed pages and the public manifest the plugin consumes. Its source lives in a separate repository and is not part of this project. |
 
@@ -28,7 +28,7 @@ WordPress plugin to embed [ChefSolver](https://chefsolver.com/) converter widget
 
 ## Install (QA)
 
-1. Zip the repo contents into `chefsolver-embeds.zip` (folder `chefsolver-embeds/` at the ZIP root), or grab a ZIP from a release.
+1. Run `bin/build-zip.sh` to produce `build/chefsolver-embeds.zip` (runtime files only, `chefsolver-embeds/` folder at the ZIP root), or grab a ZIP from a release.
 2. wp-admin → Plugins → Add New → Upload Plugin → upload → Activate.
 3. Put `[chefsolver_embed type="converter" slug="ml-to-grams" lang="en"]` in a post: the ChefSolver converter iframe renders.
 
